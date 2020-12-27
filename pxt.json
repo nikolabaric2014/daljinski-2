@@ -1,0 +1,22 @@
+{
+    "name": "daljinski-2",
+    "description": "",
+    "dependencies": {
+        "core": "*",
+        "maqueen": "github:jhlucky/maqueen#fef228d7be5148f7bce8b0de61d00d7d64aef87c",
+        "neopixel": "github:microsoft/pxt-neopixel#v0.6.2",
+        "microphone": "*"
+    },
+    "files": [
+        "main.blocks",
+        "main.ts",
+        "README.md"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "supportedTargets": [
+        "microbit"
+    ],
+    "preferredEditor": "blocksprj"
+}

@@ -1,21 +1,29 @@
 maqueen.IR_callbackUser(function ({ myparam: message }) {
     if (message == 21) {
         item.showColor(neopixel.colors(NeoPixelColors.Green))
+        maqueen.writeLED(maqueen.LED.LEDLeft, maqueen.LEDswitch.turnOff)
+        maqueen.writeLED(maqueen.LED.LEDRight, maqueen.LEDswitch.turnOff)
         maqueen.MotorRun(maqueen.aMotors.M1, maqueen.Dir.CW, 150)
         maqueen.MotorRun(maqueen.aMotors.M2, maqueen.Dir.CW, 150)
     }
     if (message == 17) {
         item.showColor(neopixel.colors(NeoPixelColors.White))
+        maqueen.writeLED(maqueen.LED.LEDLeft, maqueen.LEDswitch.turnOff)
+        maqueen.writeLED(maqueen.LED.LEDRight, maqueen.LEDswitch.turnOff)
         maqueen.MotorRun(maqueen.aMotors.M1, maqueen.Dir.CCW, 150)
         maqueen.MotorRun(maqueen.aMotors.M2, maqueen.Dir.CCW, 150)
     }
     if (message == 16) {
         item.showColor(neopixel.colors(NeoPixelColors.Green))
+        maqueen.writeLED(maqueen.LED.LEDLeft, maqueen.LEDswitch.turnOn)
+        maqueen.writeLED(maqueen.LED.LEDRight, maqueen.LEDswitch.turnOff)
         maqueen.MotorRun(maqueen.aMotors.M1, maqueen.Dir.CW, 20)
         maqueen.MotorRun(maqueen.aMotors.M2, maqueen.Dir.CW, 150)
     }
     if (message == 18) {
         item.showColor(neopixel.colors(NeoPixelColors.Green))
+        maqueen.writeLED(maqueen.LED.LEDLeft, maqueen.LEDswitch.turnOff)
+        maqueen.writeLED(maqueen.LED.LEDRight, maqueen.LEDswitch.turnOn)
         maqueen.MotorRun(maqueen.aMotors.M1, maqueen.Dir.CW, 150)
         maqueen.MotorRun(maqueen.aMotors.M2, maqueen.Dir.CW, 20)
     }
